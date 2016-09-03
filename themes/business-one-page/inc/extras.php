@@ -259,9 +259,16 @@ function business_one_page_excerpt_length_alt( $length ){
     return 12;
 }
 
+
+
+
+
+
 /**
  * Footer Credits 
 */
+
+/*
 function business_one_page_footer_credit(){
     $text  = '<div class="site-info">';
     $text .= sprintf( esc_html__( 'Copyright &copy;  %s', 'business-one-page' ), date_i18n( 'Y' ) . ' <a href="' . esc_url( home_url( '/' ) ) .'">' . esc_html( get_bloginfo( 'name' ) ) . '</a> &middot; ' );
@@ -271,7 +278,21 @@ function business_one_page_footer_credit(){
     echo apply_filters( 'business_one_page_footer_text', $text );    
 }
 add_action( 'business_one_page_footer', 'business_one_page_footer_credit' );
+*/
 
+
+/**
+ * Footer Credits 
+*/
+function business_one_page_footer_credit(){
+    $text  = '<div class="site-info">';  
+    $text .= sprintf( esc_html__( 'Copyright &copy;  %s', 'business-one-page' ), date_i18n( 'Y' ) . ' <a href="' . esc_url( home_url( '/' ) ) .'">' . esc_html( get_bloginfo( 'name' ) ) . '</a> ' ); 
+    $text .= '</div>';
+    echo apply_filters( 'business_one_page_footer_text', $text );    
+}
+add_action( 'business_one_page_footer', 'business_one_page_footer_credit' );
+
+ 
 /**
  * Return sidebar layouts for pages
 */
