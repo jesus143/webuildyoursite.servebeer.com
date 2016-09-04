@@ -1,0 +1,24 @@
+#gform_wrapper_1 {
+	padding-top:30px !important; 
+	width:80%; 
+}
+
+
+#gform_wrapper_1 form {
+	border: 1px solid #FFF !important;
+}
+
+#gform_wrapper_1 .gform_title { 
+color:white !important;
+}
+
+#gform_wrapper_1 input, #gform_wrapper_1 textarea   {  
+	width:100%; 
+	font-size:1.1em !important;
+	font-family:arial !important;
+}
+
+#gform_confirmation_message_1 {
+	color:green; 
+	font-weight:bold;
+}
